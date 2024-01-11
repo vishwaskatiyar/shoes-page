@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .body {
+        height: 99vh;
+      }
+      .container {
+        margin: auto;
+        margin-top: 7.5%;
+        width: 85%;
+        height: 65vh;
+        padding: 2%;
+        box-shadow: 0px 0px 10px black;
+        background: linear-gradient(to right, #aa21a6, #e94057, #f0e13c);
+      }
+
+      .container::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        transform: skewY(10deg);
+        background: linear-gradient(to right, #d41913, #697bc9);
+        z-index: -1;
+        box-shadow: 0px 0px 10px black;
+      }
+      .des {
+        max-width: 40%;
+        color: white;
+      }
+      .des > h1 {
+        margin-bottom: 30px;
+        font-size: xx-large;
+      }
+      .des > p {
+        margin-bottom: 50px;
+        font-size: large;
+      }
+      .shoes-1 {
+        position: fixed;
+        right: 0px;
+        top: 10%;
+        width: 500px;
+        height: 250px;
+      }
+      .shoes-1:hover {
+        right: 10px;
+        top: 12px;
+        width: 800px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="des">
+        <h1>Shoe-1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at,
+          blanditiis saepe adipisci molestiae neque quisquam perferendis,
+          repudiandae repellendus odio a repellat minus iste sapiente molestias
+          nulla nam, quas perspiciatis!
+        </p>
+        <p>
+          Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Rem, dolore.
+        </p>
+      </div>
+      <img
+        class="shoes-1"
+        src="https://priyanshu-240499.github.io/Assignments-CSS/position/assets/shoe-1.png"
+        alt="shoes"
+      />
+    </div>
+  </body>
+</html>
